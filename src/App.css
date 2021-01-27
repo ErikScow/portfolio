@@ -57,32 +57,61 @@ table {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #464866;
   color: #d9dade;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.content-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.content-container .section-container {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 18px;
+}
+
 header {
   height: 100vh;
   background: #25274d;
-  padding-top: 35vh;
+  padding-top: 37vh;
 }
 header h1 {
   text-align: center;
-  font-size: 55px;
   margin-bottom: 10px;
   color: #2e9cca;
 }
-header h2 {
+header h3 {
   text-align: center;
-  font-size: 25px;
   margin-bottom: 20px;
+}
+header p {
+  text-align: center;
 }
 header nav {
   width: 100%;
   text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0px;
   height: 50px;
   background: #25274d;
@@ -91,13 +120,37 @@ header nav a {
   display: inline-block;
   font-size: 25px;
   margin: 15px;
+  text-decoration: none;
+  color: inherit;
 }
 header nav a:hover {
   cursor: pointer;
   color: #2e9cca;
 }
-header div {
-  height: 2000px;
+
+.about-container p {
+  padding: 10px 0;
+}
+.about-container .tech-lists-container {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.about-container .tech-lists-container .list {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.projects-section .projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.projects-section .projects-container .project-container {
+  width: 45%;
+  height: 200px;
+  margin: 20px 0;
+  background: red;
 }
 
 /*# sourceMappingURL=App.css.map */

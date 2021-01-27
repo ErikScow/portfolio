@@ -2,12 +2,13 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className="about-container">
+        <div className="about-container section-container" id="about">
             <h2>About Me</h2>
             <p>I'm a Full Stack Developer based in California looking for new opportunities. I'm a quick learner who loves solving complex problems. I work well under pressure and I always produce the expected results, often going above and beyond.</p>
             <p>My specialties are React and Node, but I'm always looking forward to learning new technologies. I am always learning and doing whatever I can to improve the quality of both my code and my final products.</p>
+            <p>Technologies I've been using:</p>
             <div className='tech-lists-container'>
-                <p>Technologies I've been using:</p>
+                
                 <div className='list'>
                     <p>Front End:</p>
                     <ul>
