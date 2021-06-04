@@ -1,14 +1,15 @@
-.about-container{
-    p{
-        padding: 10px 0;
+.about-container {
+  margin-top: 50px;
+  p {
+    padding: 10px 0;
+  }
+  .tech-lists-container {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    .list {
+      vertical-align: top;
+      display: inline-block;
+      margin-right: 80px;
     }
-    .tech-lists-container{
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        .list{
-            vertical-align: top;
-            display:inline-block;
-            margin-right: 80px;
-        }
-    }
+  }
 }

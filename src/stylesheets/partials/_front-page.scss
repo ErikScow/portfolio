@@ -1,40 +1,41 @@
- header{
-    height: 100vh;
-    background: $header-background;
-    padding-top: 37vh;
-    
-    h1{
-        text-align: center;
-        margin-bottom: 10px;
+header {
+  width: 100%;
+  background: $header-background;
+  position: fixed;
+  top: 0;
+
+  height: 50px;
+  .container {
+    width: 80%;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 30px;
+      margin: 10px 0;
+      color: $text-color-one;
+    }
+
+    nav {
+      text-align: left;
+      height: 50px;
+      background: $header-background;
+      width: 33%;
+      display: flex;
+      justify-content: space-between;
+      a {
+        display: inline-block;
+        font-size: 25px;
+        margin: 15px 0;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a:hover {
+        cursor: pointer;
         color: $text-color-one;
+      }
     }
-    h3{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    p{
-        text-align: center;
-    }
-    nav{
-        width: 100%;
-        text-align: center;
-        position:fixed;
-        top:0px;
-        height: 50px;
-        background: $header-background;
-        a{
-            display: inline-block;
-            font-size: 25px;
-            margin: 15px;
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        a:hover{
-            cursor: pointer;
-            color: $text-color-one;
-        }
-    }
+  }
 }
-  
-  

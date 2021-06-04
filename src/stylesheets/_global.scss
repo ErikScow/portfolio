@@ -1,34 +1,33 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background: $app-background;
-    color: $text-color-two;
-    font-family:Arial, Helvetica, sans-serif;
-    
+  background: $app-background;
+  color: $text-color-two;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.content-container{
-    width: 80%;
-    margin: 0 auto;
-    .section-container{
-        padding: 30px;
-    }
+.content-container {
+  width: 80%;
+  margin: 0 auto;
+  .section-container {
+    padding: 30px;
+  }
 }
 
-h1{
-    font-size: 55px;
+h1 {
+  font-size: 55px;
 }
 
-h2{
-    font-size: 45px;
+h2 {
+  font-size: 45px;
 }
 
-h3{
-      font-size: 25px;
+h3 {
+  font-size: 25px;
 }
 
-p{
-      font-size: 18px;
+p {
+  font-size: 18px;
 }

@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
-    return (
-        <header id="home">
-            <h1>Erik Scow</h1>
-            <h3>Full Stack Developer</h3>
-            <p>Software engineer based in Central California,specializing in React and Node development. </p>
-            <nav>
-                <a href='#home'>Home</a>
-                <a href='#about'>About Me</a>
-                <a href='#projects'>Projects</a>
-                <a href='#contact'>Contact</a>
-            </nav>
-        </header>
-    )
-}
+  return (
+    <header id="home">
+      <div className="container">
+        <h1>Erik Scow: Full Stack Developer</h1>
 
-export default Header
+        <nav>
+          <a href="#about">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

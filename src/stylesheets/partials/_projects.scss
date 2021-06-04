@@ -1,13 +1,13 @@
-.projects-section{
-    .projects-container{
-        display:flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        .project-container{
-            width: 45%;
-            height: 200px;
-            margin: 20px 0; 
-            background: red;
-        }
+.projects-section {
+  .projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    .project-container {
+      width: 100%;
+      height: 200px;
+      margin: 20px 0;
+      background: red;
     }
+  }
 }
