@@ -62,17 +62,17 @@ html {
 }
 
 body {
-  background: #464866;
-  color: #d9dade;
+  background: #e6e6e6;
+  color: #161616;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .content-container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .content-container .section-container {
-  padding: 30px;
+  padding: 0 30px;
 }
 
 h1 {
@@ -80,7 +80,8 @@ h1 {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 h3 {
@@ -93,57 +94,131 @@ p {
 
 header {
   width: 100%;
-  background: #25274d;
+  z-index: 500;
+}
+header .container-outer {
+  width: 100%;
+  height: 50px;
+  background: #272727;
   position: fixed;
   top: 0;
-  height: 50px;
 }
-header .container {
-  width: 80%;
+header .container-outer .container-inner {
+  width: 70%;
   padding: 0 30px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-header .container h1 {
-  font-size: 30px;
+header .container-outer .container-inner h1 {
+  font-size: 25px;
   margin: 10px 0;
-  color: #d9dade;
+  color: #cacaca;
 }
-header .container nav {
+header .container-outer .container-inner nav {
   text-align: left;
   height: 50px;
-  background: #25274d;
+  background: #272727;
   width: 33%;
   display: flex;
   justify-content: space-between;
 }
-header .container nav a {
+header .container-outer .container-inner nav a {
+  z-index: 1000;
   display: inline-block;
-  font-size: 25px;
+  font-size: 18px;
   margin: 15px 0;
   text-decoration: none;
-  color: inherit;
+  color: #cacaca;
 }
-header .container nav a:hover {
+header .container-outer .container-inner nav a:hover {
   cursor: pointer;
-  color: #d9dade;
+  color: #cacaca;
+}
+header .banner {
+  margin-top: 50px;
+  width: 100%;
+  background: red;
+  height: 200px;
 }
 
-.about-container {
-  margin-top: 50px;
+#about {
+  z-index: 0;
+  position: relative;
+  top: -40px;
+  height: 40px;
+  pointer-events: none;
 }
+
 .about-container p {
   padding: 10px 0;
 }
-.about-container .tech-lists-container {
-  flex-flow: row nowrap;
+.about-container .about-top {
+  display: flex;
   justify-content: space-between;
 }
+.about-container .about-top .about-left {
+  width: 48%;
+}
+.about-container .about-top .about-left p#first {
+  padding-top: 24px;
+}
+.about-container .about-top .about-right {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.about-container .about-top .about-right .image-container {
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: 100%;
+}
+.about-container #technologies-title {
+  font-weight: bold;
+  font-size: 23px;
+  margin: 50px 0 30px;
+  text-align: center;
+}
+.about-container .tech-lists-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
 .about-container .tech-lists-container .list {
+  width: 300px;
   vertical-align: top;
   display: inline-block;
-  margin-right: 80px;
+  text-align: center;
+}
+.about-container .tech-lists-container .list p {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.about-container .tech-lists-container .list li {
+  color: #0084ff;
+  margin: 10px 0;
+}
+.about-container .tech-lists-container .list li:hover {
+  cursor: pointer;
+}
+.about-container .tech-lists-container .vert-line {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container .tech-lists-container .vert-line .line {
+  min-height: 90%;
+  border-left: 1px solid #161616;
+}
+
+#projects {
+  position: relative;
+  top: -40px;
+  height: 40px;
+  pointer-events: none;
 }
 
 .projects-section .projects-container {

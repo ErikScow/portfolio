@@ -1,3 +1,9 @@
+#projects {
+  position: relative;
+  top: -40px;
+  height: 40px;
+  pointer-events: none;
+}
 .projects-section {
   .projects-container {
     display: flex;
