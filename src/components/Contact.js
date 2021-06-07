@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { contactUrl } from "../config";
+import axios from "axios";
 
 const Contact = () => {
   const [inputs, setInputs] = useState({
@@ -18,6 +20,12 @@ const Contact = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    axios.post(`${contactUrl}/send`, {
+      name: inputs.name,
+      email: inputs.email,
+      subject: inputs.subject,
+      message: inputs.message,
+    });
   };
 
   return (
@@ -25,7 +33,7 @@ const Contact = () => {
       <div id="contact"></div>
       <div className="contact-container section-container">
         <h2>Contact</h2>
-        <form>
+        <form onSubmit={submitHandler}>
           <label htmlFor="name">Name</label>
           <input
             id="name"
@@ -37,7 +45,7 @@ const Contact = () => {
           <label htmlFor="email">Email</label>
           <input
             id="email"
-            type="text"
+            type="email"
             name="email"
             value={inputs.email}
             onChange={changeHandler}
